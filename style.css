@@ -1,0 +1,200 @@
+*{
+    font-family: Calibri;
+}
+
+html, body{
+    background-color: azure;
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+header{
+    background-color: #e98a95;
+    height: 250px;
+    width: 100%;
+}
+
+/* kalo flexboxnya horizontal pake justify-content */
+.flex-container{
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: 4px solid #e98a95;
+}
+
+.flex-container > a{
+    background-color: white;
+    width: 170px;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #e98a95;
+    border-left: 2px solid #e98a95;
+    border-right: 2px solid #e98a95;
+    border-top: 2px solid #e98a95;
+    border-bottom: 2px solid #e98a95;
+    box-shadow: 5px 5px;
+}
+
+.flex-container > #bHome:hover{
+    background-color: #e98a95;
+    color: white;
+    box-shadow: 5px 5px lightgray;
+}
+
+.flex-container > #bProducts:hover{
+    background-color: #e98a95;
+    color: white;
+    box-shadow: 5px 5px lightgray;
+}
+
+.flex-container > #bAbout:hover{
+    background-color: #e98a95;
+    color: white;
+    box-shadow: 5px 5px lightgray;
+}
+
+.flex-container > #bContact:hover{
+    background-color: #e98a95;
+    color: white;
+    box-shadow: 5px 5px lightgray;
+}
+
+main{
+    background-color: antiquewhite;
+    width: 70%;
+    height: 90%;
+}
+
+#container-kotak{
+    height: 100%;
+    background-image: url(asset/p3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#kotak{
+    background-color: white;
+    width: 60%;
+    height: 70%;
+}
+
+#isi-kotak {
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+#isi-kotak > h1{
+    /* margin-top: 0%;
+    margin-left: 30px;
+    padding-top: 15px; */
+    text-align: center;
+    color: #e98a95;
+    font-size: 60px;
+}
+
+@media(max-width: 1250px){
+    #isi-kotak > h1{
+        font-size: 45px;
+    }
+}
+
+@media(max-width: 715px){
+    #isi-kotak > h1{
+        font-size: 30px;
+    }
+}
+
+article > h3{
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #e98a95;
+}
+
+@media(max-width: 1250px){
+    article > h3{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 715px){
+    article > h3{
+        font-size: 12px;
+    }
+}
+
+section{
+    padding-top: 10%;
+}
+
+aside{
+    background-color: #e98a95;
+    width: 30%;
+    height: 90%;
+    float: right;
+    border-left: 4px solid #e98a95;
+}
+
+#new{
+    padding-right: 50;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    margin-top: 10%;
+}
+
+#caption1{
+    margin-top: 2%;
+}
+
+#video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#ril{
+    border: none;
+}
+
+#new2{
+    color: white;
+}
+
+/* kalo vertical pake align-items dan flex-direction */
+.flex-container2{
+    background-color: #e98a95;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* margin-top: auto; */
+    padding-top: 30px;
+}
+
+.flex-container2 > div{
+    background-color: #e98a95;
+    height: 100px;
+    color: white;
+    text-align: center;
+}
